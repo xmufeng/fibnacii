@@ -2,6 +2,7 @@ package fibnacci
 
 import (
 	"fmt"
+	"github.com/xmufeng/mprint"
 )
 
 func fib() func() int {
@@ -15,6 +16,9 @@ func fib() func() int {
 }
 
 func Fibnacci(count int) {
+
+	mprint.Println()
+
 	f := fib()
 	for i := 0; i < count; i++ {
 		fmt.Printf("%d - ", f())
